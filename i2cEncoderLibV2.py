@@ -628,3 +628,8 @@ class i2cEncoderLibV2:
         data = self.i2cbus.read_i2c_block_data(self.i2cadd, add, 4)
         value = struct.unpack(">f", bytearray(data)) 
         return value[0]
+
+# read the i2cadd #
+    def readI2CAdd(self):
+        return self.i2cadd
+
