@@ -10,7 +10,7 @@ INTERRUPT_PIN = 34
 ENCODER_ADDRESSES = [0x50, 0x30, 0x60, 0x44]
 
 # Initialize the interrupt pin.
-INT_pin = Pin(INTERRUPT_PIN, Pin.IN, Pin.PULL_UP)
+INT_pin = Pin(INTERRUPT_PIN, Pin.IN)
 
 # Initialize the I2C bus.
 i2c = I2C(I2C_BUS, scl=Pin(I2C_SCL_PIN), sda=Pin(I2C_SDA_PIN))
